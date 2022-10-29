@@ -1,0 +1,139 @@
+* {
+  text-align: center;
+  background-color: #ece8d3;
+}
+
+.big-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 250%;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #4f6339;
+}
+
+.ur-balance,
+.trans-history {
+  text-transform: uppercase;
+  color: #493932;
+  text-indent: 50px;
+  letter-spacing: 3px;
+}
+
+.rural-blue {
+  color: #2e303e
+}
+
+.earth-brown {
+  color: #493932
+}
+
+.mallard-green {
+  color: #4f6339
+}
+
+.homey-taupe {
+  color: #ece8d3
+}
+
+
+.card-expenses-income {
+  margin-right: 30px;
+  display: inline-flex;
+  gap: 60%;
+}
+
+.card-title {
+  text-transform: uppercase;
+  color: #493932;
+  font-size: large;
+}
+
+.card-amount {
+  color: #4f6339;
+  font-size: large;
+  font-weight: lighter;
+}
+
+.transactions {
+  margin: auto;
+  width: 70%;
+  list-style: none;
+}
+
+.transactions li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  position: relative;
+  display: block;
+  margin: 5px 0;
+  border: #493932 solid 2px;
+
+}
+
+.button-delete {
+  background-color: #ece8d3;
+  cursor: pointer;
+  color: #2e303e;
+  border: 2px solid #4f6339;
+  font-weight: 2px;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding-left: 10%;
+  text-align: right;
+
+
+
+}
+
+.trans-span {
+  font-size: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2e303e;
+  gap: 20%;
+
+
+}
+
+.transaction-form {
+  padding-bottom: 10%;
+}
+
+.transaction-form label {
+  text-transform: uppercase;
+  color: #493932;
+  font-weight: bold;
+  font-size: large;
+}
+
+
+.transaction-form input {
+  font-style: italic;
+  font-size: large;
+  border: 2px solid #4f6339;
+  margin: 20px;
+  width: 200px;
+  height: 30px;
+}
+
+.transaction-form button {
+  background-color: #4f6339;
+  color: #ece8d3;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 2px solid #4f6339;
+  border-radius: 4px;
+  margin: 15px 10px;
+  width: 210px;
+  height: 40px;
+}
+
+.swal-overlay {
+  background-color: #4939329e;
+}
