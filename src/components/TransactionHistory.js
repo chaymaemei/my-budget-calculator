@@ -11,8 +11,9 @@ function TransactionHistory({ transactions, onDeleteTransaction }) {
                     transactions.map((data) => 
                         <li 
                          key={data.id}>
-                            <div>
-                                <span className='trans-span'>-- {data.name}  --  MAD {data.amount}</span>
+                            <div className='card-amount'>
+                                {data.type}
+                                <span className='trans-span'> - {data.name}  -  MAD {data.amount}</span>
                                 <button className='button-delete' onClick={() => onDeleteTransaction(data.id)}> delete x</button>
                             </div>
                         </li>

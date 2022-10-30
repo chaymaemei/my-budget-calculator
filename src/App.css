@@ -137,3 +137,11 @@
 .swal-overlay {
   background-color: #4939329e;
 }
+.Graph{
+  width: 200px;
+  margin: auto;
+}
+.toast-success {
+  background: #ece8d3;
+  color: #4939329e;
+}

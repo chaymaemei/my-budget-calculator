@@ -1,13 +1,11 @@
 import '../App.css';
-import PopCharts from './Graph';
-
+import PopCharts from './Chart';
 import { currencyFormatter } from "../utils"
 
 function Expense({ income, expense }) {
     return (
         <div>
             <h2 className='ur-balance'>Your Balance {currencyFormatter.format(income - expense)}</h2>
-            <div className='graph'> <PopCharts/></div>
             <div className='card-expenses-income'>
                 <div className='col-income'>
                     <span>
@@ -19,8 +17,8 @@ function Expense({ income, expense }) {
                     <h3 className='card-title'>Expense</h3>
                     <div className='card-amount'>{currencyFormatter.format(expense)}</div>
                 </div>
-                
-               
+
+
             </div>
         </div>
     )

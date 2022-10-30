@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { uniqueId } from '../utils';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../App.css';
 
@@ -21,7 +22,16 @@ function TransactionForm({ onNewTransaction }) {
 
         setNameValue('');
         setAmountValue('');
-
+        toast.success('successfully added', {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
 
     }
 
@@ -47,9 +57,13 @@ function TransactionForm({ onNewTransaction }) {
                 <div>
                     <button className='income-btn' onClick={(e) => addTransaction('income', e)} >Add Income</button>
                     <button className='expense-btn' onClick={(e) => addTransaction('expense', e)}>Add Expense</button>
+                
                 </div>
+                
             </form>
+            <ToastContainer/>
         </div>
+        
     )
 }
 
